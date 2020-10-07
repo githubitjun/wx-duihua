@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>在线微信对话生成器_微信转账在线生成器</title>
+  <meta name="keywords" content="微信对话生成器,微信转账在线生成器,微信转账图片生成器,微信转账截图生成器" />
+  <meta name="description" content="在线制作微信对话生成器和支付宝转账，可以生成微信转账、支付宝聊天、微信余额、微信零钱、微信红包、在线聊天等仿真截图，一款微商截图装逼神器" />
+  <meta name="renderer" content="webkit">
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    name="viewport">
+  <meta content="telephone=no, address=no" name="format-detection">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- MetisMenu CSS -->
+  <link href="css/metismenu.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+
+  <!-- Custom Fonts -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <link href="css/datetimepicker.css" rel="stylesheet" type="text/css">
+  <link href="css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+  <link href="css/dropdown.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+  <!-- jQuery -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script>
+    var is_check_brower = true;
+    var is_mobile = '';
+    var image_type = 0;
+  </script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="js/metismenu.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.zh-cn.js" charset="UTF-8"></script>
+  <script src="js/jquery.sglide.js"></script>
+  <script src="js/sb-admin-2.js"></script>
+  <script type="text/javascript" src="js/html2canvas.min.js"></script>
+  <script type="text/javascript" src="js/emoji.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script src="js/bootbox.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/m.css">
+
+  <script>
+    $(function () {
+      $('#btn-menu').click(function () {
+        $('.sidebar-nav').toggle();
+      });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/wxpay2019.css">
+  <style>
+    .modal-dialog {
+      z-index: 2048;
+    }
+
+    #bglist li {
+      list-style: none;
+      float: left;
+      margin: 5px;
+    }
+
+    #bglist li img {
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+      <!-- 头部 -->
+      <div class="navbar-header">
+        <a href="/wxduihua.html" class="top-logo">微信对话</a>
+        <a href="javascript:;" id="btn-menu">Menu</a>
+
+      </div>
+      <!-- /.navbar-header -->
+
+      <ul class="nav navbar-top-links navbar-right">
+
+        <!--<li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>微微二维码生成器
+            </a>
+        </li>
+        <li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>语音码
+            </a>
+        </li>
+        <li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>多媒体码
+            </a>
+        </li>
+        <li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>二维码生成器
+            </a>
+        </li>-->
+        <!-- <li><a href="/wxlogin.html"><i class="fa fa-sign-in fa-fw"></i> 登录 / 注册</a></li> -->
+      </ul>
+      <!-- /.navbar-top-links -->
+
+      <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse collapse">
+          <ul class="nav" id="side-menu">
+            <!-- <li class="active">
+              <a href="/"><i class="fa fa-home fa-fw"></i> 首页</a>
+            </li> -->
+            <li class="active">
+              <a href="javascript:;"><i class="fa fa-wechat fa-fw"></i> 微信 - <span style="color:red">2019
+                  最新版</span><span class="fa arrow"></span></a>
+              <ul class="nav nav-second-level">
+                <li>
+                  <a href="./default.html">微信对话生成 </a>
+                </li>
+                <li>
+                  <a href="./wxpay.html">微信转账详情生成</a>
+                </li>
+                <li>
+                  <a href="./wxwallet.html">微信零钱页面生成</a>
+                </li>
+                <!-- <li>
+                  <a target="_blank"
+                    href="http://www.videaba.com/index.php?s=/Home/Article/detail/id/127464.html">制作教程</a>
+                </li> -->
+              </ul>
+              <!-- /.nav-second-level -->
+            </li>
+            <!-- <li class="active">
+              <a href="javascript:;"><i class="fa fa-shield fa-fw"></i> 支付宝 - <span style="color:red">2020
+                  最新版</span><span class="fa arrow"></span></a>
+              <ul class="nav nav-second-level">
+                <li>
+                  <a href="/alipay2020.html">支付宝转账生成<span style="color:red">2020最新</span></a>
+                </li>
+                <li>
+                  <a href="/alipay.html">支付宝转账生成2019</a>
+                </li>
+                <li>
+                  <a href="/balance.html">支付宝账户余额生成</a>
+                </li>
+              </ul>
+            </li> -->
+            <!-- <li>
+              <a href="/qr.html">
+                <i class="fa fa-qrcode fa-fw"></i> <span style="color: red;">合成二维码</span></a>
+            </li> -->
+            <!--<li class="active">
+                    <a href="javascript:;"><i class="fa fa-link fa-fw"></i> 实用工具<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="">二维码解码器</a>
+                        </li>
+                        <li>
+                            <a href="">图片转文字</a>
+                        </li>
+                        <li>
+                            <a href="">图片gps信息查看</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active" style="margin-top:20px;">
+                    <a  href="" target="_blank"> 免费美化二维码</a>
+                </li>-->
+
+          </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+      </div>
+      <!-- /.navbar-static-side -->
+      <!-- /头部 -->
+    </nav>
+
+    <!-- 主体 -->
+    <div id="page-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="page-header">微信转账详情生成</h3>
+        </div>
+      </div>
+
+
+      <div class="row" style="position:relative;padding: 0 15px;">
+        <div class="panel-body panel-wx-tab">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#w1" data-toggle="tab">外观设置</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="w1">
+              <div class="setting">
+                <p>
+                  <span>信号强度：</span>
+                  <select class="slt-common" data-class="i-signal">
+                    <option value="i-signal1">1格</option>
+                    <option value="i-signal2">2格</option>
+                    <option value="i-signal3">3格</option>
+                    <option value="i-signal4">4格</option>
+                    <option selected value="i-signal5">5格</option>
+                  </select>
+                </p>
+                <p>
+                  <span>运营商：</span>
+                  <select class="slt-common" data-class="i-carrier">
+                    <option value="i-c-yd">中国移动</option>
+                    <option value="i-c-lt">中国联通</option>
+                    <option value="i-c-dx">中国电信</option>
+                  </select>
+                </p>
+                <p>
+                  <span>网络信号：</span>
+                  <select class="slt-common" data-class="i-network">
+                    <option value="">无</option>
+                    <option selected value="i-n-wifi">Wifi</option>
+                    <option value="i-n-g">G</option>
+                    <option value="i-n-e">E</option>
+                    <option value="i-n-3g">3G</option>
+                    <option value="i-n-4g">4G</option>
+                  </select>
+                </p>
+                <p>
+                  <span>手机时间：</span>
+                  <select class="slt-phone-time slt-p-shi">
+                    <option>-</option>
+                    <option>上午</option>
+                    <option>下午</option>
+                  </select>
+                  <select class="slt-phone-time slt-p-hour">
+                  </select> :
+                  <select class="slt-phone-time slt-p-minite">
+                  </select>
+                </p>
+                <p>
+                  <span>锁定旋转：</span>
+                  <label><input class="rd-common" data-class="i-top-dir" type="radio" name="top-dir" value="1"
+                      checked /> 显示</label>
+                  <label><input class="rd-common" data-class="i-top-dir" type="radio" name="top-dir" value="0" />
+                    不显示</label>
+                </p>
+                <div style="margin: 0 0 10px;margin-top: 20px;">
+                  <span>电量：</span>
+                  <div class="slider_bar"></div>
+                </div>
+                <p>
+                  <span>电池状态：</span>
+                  <select class="slt-common" data-class="i-top-berry">
+                    <option value="">正常</option>
+                    <option value="i-top-berry2">充电中</option>
+                  </select>
+                </p>
+                <p>
+                  <span>电池百分比：</span>
+                  <label><input class="rd-common" data-class="i-top-berry-num" type="radio" name="i-top-berry-num"
+                      value="1" checked /> 显示</label>
+                  <label><input class="rd-common" data-class="i-top-berry-num" type="radio" name="i-top-berry-num"
+                      value="0" /> 不显示</label>
+                </p>
+                <p>
+                  <span>转账金额：</span>
+                  <input type="text" value="88.88" class="i-w-pay-money-change">
+                  <script>
+                    $(function () {
+                      $('.i-w-pay-money-change').bind('input propertychange', function () {
+                        var value = $(this).val();
+                        if (!value || isNaN(value))
+                          return false;
+                        value = toDecimal2(value);
+                        $('.i-w-pay-money span').text(value);
+                      });
+                    });
+                  </script>
+                </p>
+                <p>
+                  <span>转账时间：</span>
+                  <input type="text" value="" class="input-common datepicker i-w-pay-sen-date"
+                    data-class="i-w-pay-sen-time span">
+                </p>
+                <p>
+                  <span>收款时间：</span>
+                  <input type="text" value="" class="input-common datepicker i-w-pay-rec-date"
+                    data-class="i-w-pay-rec-time span">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="my-btns">
+          <div class="loading">正在生成，请稍候......</div>
+          <input id="save" class="btn btn-primary" type="button" value="生成图片" />
+          <a id="btn-water" class="btn btn-danger btn_no_water" target="_blank" href="http://www.12tool.com/pay">充值</a>
+          <i style="margin-left:10px;">如充值成功,请点击左侧[生成图片]按钮</i>
+        </div> -->
+        <div class="phone-wrap">
+          <div id="iphone" class="iphone">
+            <div class="i-top">
+              <div class="i-top-elm i-signal"></div>
+              <div class="i-top-elm i-carrier i-c-yd"></div>
+              <div class="i-top-elm i-network i-n-wifi"></div>
+              <div class="i-top-elm i-top-time">00:00</div>
+              <div class="i-top-elm-r i-top-berry"><i><em></em></i></div>
+              <div class="i-top-elm-r i-top-berry-num">50%</div>
+              <div class="i-top-elm-r i-top-dir"></div>
+              <div class="i-nav i-nav-pay-detail">
+              </div>
+            </div>
+            <div class="i-body i-body-pay-detail">
+              <div class="i-w-pay-money"><span>88.88</span></div>
+              <div class="i-sy-year">转入赚收益 七日年化 2.48%</div>
+              <div class="i-w-pay-sen-time"><span>2015-04-04 11:06:26</span></div>
+              <div class="i-w-pay-rec-time"><span>2015-04-04 11:07:32</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="emojiPanel" id="emojiPanel">
+        <ul class="faceTab">
+          <li><a class="chooseFaceTab" href="javascript:;">QQ表情</a></li>
+          <!--<li><a href="javascript:;">符号表情</a></li>
+        <li><a href="javascript:;">动画表情</a></li>-->
+        </ul>
+        <div class="faceWrap" style="zoom:1;outline:none;">
+          <div class="faceBox emojiArea"></div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        set_water();
+        setInterval(function () {
+          set_water();
+        }, 2000);
+
+        if (is_mobile == '1') {
+          $('.i-w-pay-money').addClass('i-w-pay-money-mobile');
+        }
+
+        $('body').on('change', '.a-u-pic-show input', function () {
+          var img = document.createElement('img');//创建 img 对象
+          var _this = $(this);
+
+          window.URL = window.URL || window.webkitURL;
+
+          var imgFile = $(this).get(0);
+
+          if (window.URL && images / imgfile.files[0]) {
+            var reader = new FileReader();
+            reader.readAsDataURL(imgFile.files[0]);
+            reader.onload = function (e) {
+              var img = '<img src="' + this.result + '" alt=""/>';
+              _this.parent().find('img').remove();
+              _this.parent().append(img);
+              $('.i-b-a-face').css('background-image', 'url(' + this.result + ')');
+            }
+          }
+        });
+
+        $('.datepicker').datetimepicker({
+          format: 'yyyy-mm-dd hh:ii:ss',
+          language: "zh-CN",
+          minView: 2,
+          autoclose: true,
+          startDate: (new Date()),
+          pickerPosition: 'top-right'
+        }).on('changeDate', function (ev) {
+          var _this = $(this);
+          _this.keyup();
+        });
+
+        var time = (new Date()).format("yyyy-MM-dd hh:mm:ss");
+        var time2 = (new Date(((new Date()).valueOf() + 5 * 60 * 1000))).format("yyyy-MM-dd hh:mm:ss");
+        $('.i-w-pay-sen-date').val(time);
+        $('.i-w-pay-sen-time span').text(time);
+        $('.i-w-pay-rec-date').val(time2);
+        $('.i-w-pay-rec-time span').text(time2);
+
+        //交易号
+        function set_trade() {
+          var rand = randomString(14);
+          var head = (new Date()).format("yyyy-MM-dd hh:mm").split(' ')[0].replace('-', '').replace('-', '');
+          var num = head + '00000000' + rand;
+          $('.i-b-a-trade').text(num);
+        }
+        set_trade();
+        $('#btn-trade').click(function () {
+          set_trade();
+        });
+
+
+        //类型
+        $('.slt-type').change(function () {
+          var type = $(this).find('option:selected').val();
+          switch (type) {
+            case '1': {
+              $('.i-b-a-plus').text('+').removeClass('i-b-a-mines');
+              $('.i-body-alipay').removeClass('i-body-alipay2');
+              $('.i-b-a-pay-type').hide();
+            } break;
+            case '2': {
+              $('.i-b-a-plus').text('-').addClass('i-b-a-mines');
+              $('.i-body-alipay').addClass('i-body-alipay2');
+              $('.i-b-a-pay-type').show();
+            } break;
+          }
+        });
+
+        //随机生成邮箱
+        function set_email() {
+          var head = randomString(3, true);
+          var foot = ['qq.com', '163.com', 'yeah.net', 'sina.com', '126.com', 'vip.sina.com', 'sina.cn', 'hotmail.com', 'gmail.com', 'sohu.com', '139.com', 'wo.com.cn', '189.com', '21cn.com'];
+          var rand_num = get_random_num(0, 14);
+          var email = head + '***' + '@' + foot[rand_num];
+          $('.input-email').val(email);
+          $('.i-b-a-email').text(email);
+        }
+        set_email();
+        $('#rand_email').click(function () {
+          set_email();
+        });
+      </script>
+
+    </div>
+    <!-- /主体 -->
+  </div>
+
+  <!-- 底部 -->
+
+  <div class="pop-pic">
+    <img src="#" />
+    <div class="tips">
+      <p class="tips-mobile">手指按住上面的图片三秒钟保存到手机</p>
+      <p class="tips-pc">请将鼠标移动到上面图片上，然后点击鼠标右键，选择保持图片</p>
+      <a>继续制作</a>
+    </div>
+  </div>
+
+  <iframe id="ifm" frameborder="0" class="hide_ifm" src="/wx/blank_wxpay.html"></iframe>
+
+
+
+  <script>
+    function makePic(obj) {
+      var _this = obj;
+      var div = $('#iphone').clone();
+
+      var my_image = $('.my-image');
+      var mask = $('.mask');
+      if (!my_image.length) {
+        my_image = $('<div class="my-image">成功生成图片，点击 <a class="my-image-view" target="_blank" href="#">这里</a> 查看，<a class="my-image-continue" href="#">继续制作</a></div>');
+        $('body').append(my_image);
+      }
+      if (!mask.length) {
+        $('body').append('<div class="mask"></div>');
+      }
+
+      div.removeClass('iphone-preview');
+      div.css({
+        zoom: 1,
+        position: 'absolute',
+        left: 0,
+        top: 0
+      });
+      $('#ifm').contents().find('body').append(div);
+      _this.hide();
+      $('.loading').show();
+      $('.my-image').hide();
+      $('.mask').hide();
+
+
+      html2canvas(div, {
+        onrendered: function (canvas) {
+          var myImage = canvas.toDataURL("image/png");
+
+          var pop_pic = $('.pop-pic');
+          var pop_class = 'pc';
+          if (browser.versions.mobile) {
+            pop_class = 'mobile';
+          }
+          pop_pic.find('.tips').addClass(pop_class);
+          pop_pic.find('img').attr('src', myImage);
+          pop_pic.show();
+          $('#wrapper').hide();
+          $('.loading').hide();
+          _this.show();
+          div.remove();
+        }
+      });
+      return false;
+    }
+    $(function () {
+      $('.pop-pic .tips a').click(function () {
+        $('.pop-pic').hide();
+        $('#wrapper').show();
+      });
+
+      $('#save').click(function () {
+        start_make($(this));
+      });
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    (function () {
+      var ThinkPHP = window.Think = {
+        "ROOT": "", //当前网站地址
+        "APP": "", //当前项目地址
+        "PUBLIC": "/Public", //项目公共目录地址
+        "DEEP": "/", //PATHINFO分割符
+        "MODEL": ["2", "", "html"],
+        "VAR": ["m", "c", "a"]
+      }
+    })();
+  </script>
+  <!-- /底部 -->
+  <div style="display: none">
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?010af47f72a51e97131f1828d7caabb8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </div>
+</body>
+
+</html>

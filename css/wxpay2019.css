@@ -1,0 +1,180 @@
+﻿
+.iphone,.i-top{background-color:#fff}
+.i-nav-pay-detail{border:none;}
+.i-w-pay-money{font-weight:bold;    font-family: "黑体";}
+
+.i-top{height:32px;background:none;}
+.i-body{top:32px;    height: 1056px;}
+.iphone,.i-top,.i-body-wallet{background-color:#fff}
+.iphone{position:relative;}
+.i-nav-pay-detail{border:none;}
+.i-w-pay-money{    margin-top: 401px;}
+.i-w-pay-sen-time span,.i-w-pay-rec-time span{
+    background: none;
+    padding-left: 0;
+}
+.i-w-pay-sen-time, .i-w-pay-rec-time{font-size: 20px;color: #898989;}
+.i-w-pay-sen-time, .i-w-pay-rec-time{
+    left: 44px;
+    bottom: 46px;
+}
+.i-w-pay-rec-time{bottom: 14px;}
+.i-sy-year{
+    font-size: 30px;
+    position: relative;
+    top: 204px;
+    left: 140px;
+}
+.i-body-pay-detail{background-image: url(../images/wxpay_bgvs.png);background-size:100%;}
+
+.i-signal{
+    background: url(../images/i-top-signal5.png) no-repeat;
+    width: 54px;
+}
+.i-signal1{
+    background: url(../images/i-top-signal1.png) no-repeat;
+}
+.i-signal2{
+    background: url(../images/i-top-signal2.png) no-repeat;
+}
+.i-signal3{
+    background: url(../images/i-top-signal3.png) no-repeat;
+}
+.i-signal4{
+    background: url(../images/i-top-signal5.png) no-repeat;
+}
+.i-signal5{
+    background: url(../images/i-top-signal5.png) no-repeat;
+}
+.i-carrier{
+    line-height: 40px;
+    color: #fff;
+    font-size: 22px;
+    width: 97px;
+}
+.i-c-dx{
+    background: url(../images/i-carrier-dx.png) center 0 no-repeat;
+}
+.i-c-yd{
+    background: url(../images/i-carrier-yd.png) center 0 no-repeat;
+}
+.i-c-lt{
+    background: url(../images/i-carrier-lt.png) center 0 no-repeat;
+}
+.i-network{
+    width: 30px;
+}
+.i-n-wifi{
+    background: url(../images/i-top-wifi.png) no-repeat;
+}
+.i-n-e{
+    background: url(../images/i-top-e.png) center 0 no-repeat;
+    width: 35px;
+}
+.i-n-g{
+    background: url(../images/i-top-g.png) center 0 no-repeat;
+    width: 35px;
+}
+.i-n-3g{
+    background: url(../images/i-top-3g.png) center 0 no-repeat;
+    width: 50px;
+}
+.i-n-4g{
+    background: url(../images/i-top-4g.png) center 0 no-repeat;
+    width: 50px;
+}
+.i-n-5g{
+    background: url(../images/i-top-5g.png) center 0 no-repeat;
+    width: 50px;
+}
+.i-top-time{
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -75px;
+    color: #000;
+    line-height: 42px;
+    text-align: center;
+    font-size: 24px;
+}
+.i-top-berry,
+.i-top-berry2{
+    width: 70px;
+    background: url(../images/i-top-berry1.png) no-repeat;
+    position: relative;
+}
+.i-top-berry2{
+    background: url(../images/i-top-berry2.png) right 0 no-repeat;
+    width: 95px;
+}
+.i-top-berry i{
+    position: absolute;
+    height: 16.5px;
+    width: 44px;
+    bottom: 11.25px;
+    left: 10px;
+    padding: 2px;
+    padding-left: 3px;
+}
+.i-top-berry2 i{
+    width: 52px;
+    height: 18px;
+    left: 11px;
+    bottom: 11.25px;
+}
+.i-top-berry i em{
+    width: 50%;
+    background: #000;
+    height: 100%;
+    display: block;
+
+}
+.i-top-berry2 i em{
+    background: #4cd964 !important;
+}
+.i-top-dir{
+    width: 30px;
+    background: url(../images/i-top-dir.png) no-repeat;
+}
+.i-top-berry-num{
+    color: #000;
+    font-size: 24px;
+    line-height: 42px;
+    margin-left: 8px;
+}
+.i-nav{
+    height: 88px;
+    clear: both;
+    text-align: center;
+    color: #181818;
+    line-height: 88px;
+    font-size: 34px;
+    position: relative;
+    border-bottom:2px solid #d5d5d5;
+}
+.i-nav-alipay{
+    background: url(../images/i-top-nav-alipay.png) no-repeat;
+}
+.i-nav-pay-detail{
+    background: url(../images/i-top-nav-pay-detail.png) no-repeat;
+}
+.i-n-name{
+
+}
+.i-n-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    background: url(../images/i-top-nav.png) no-repeat;
+    height: 100%;
+}
+.i-n-name span,
+.i-n-name i{
+    display: inline-block;
+}
+
+.i-water {
+  display: none;
+}

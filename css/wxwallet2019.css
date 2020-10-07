@@ -1,0 +1,15 @@
+﻿.i-top-wechat2{background: none;}
+.iphone, .i-top{background-color: #fff;}
+.iphone{position: relative;}
+.i-top{height: 32px;}
+.i-body-wallet{background-image: url(../images/wx_money_bgy.png);background-size:100%;}
+.i-w-wa-money{margin-top: 387px;font-weight: bold;font-family: "黑体";font-size: 78px;height: 90px;line-height: 90px;overflow: hidden;margin-bottom: 40px;}
+.i-body{height: 1028px;}
+.i-sy-year{
+    position: relative;
+    top: 11px;
+    color: #fa9d3b;
+    left: 135px;
+    font-size: 28px;
+}
+.i-w-pay-money{margin-top: 387px;}

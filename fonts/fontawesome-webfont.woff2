@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>在线微信对话生成器_支付宝转账生成器_对话聊天截图_12tool工具网</title>
+    <meta name="keywords" content="微信对话生成器,在线微信对话生成器,微信对话生成器软件,微信对话生成器下载" />
+    <meta name="description" content="在线制作微信对话生成器和支付宝转账，可以生成微信转账、支付宝聊天、微信余额、微信零钱、微信红包、在线聊天等仿真截图，一款微商截图装逼神器" />
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<link href="/Public/static/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="/Public/static/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="/Public/static/sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
+
+
+<!-- Custom Fonts -->
+<link href="/Public/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<link href="/Public/static/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+<link href="/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/common.css?v=1">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- jQuery -->
+<script src="/Public/static/jquery-1.10.2.min.js"></script>
+<script>
+    var is_check_brower = true;
+    var is_mobile = '';
+    var image_type = 0;
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/Public/static/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/Public/static/metisMenu/metisMenu.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="/Public/static/jquery.sglide.js"></script>
+<script src="/Public/static/sb-admin-2/sb-admin-2.js"></script>
+<script type="text/javascript" src="/Public/Home/js/html2canvas.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/emoji.js"></script>
+<script type="text/javascript" src="/Public/Home/js/functions.js?v=1"></script>
+<script type="text/javascript" src="/Public/Home/js/common.js?v=1.1"></script>
+<script src="/Public/static/bootbox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/m.css">
+<script>
+    $(function(){
+        $('#btn-menu').click(function(){
+            $('.sidebar-nav').toggle();
+        });
+    });
+</script>
+</head>
+<body>
+<div id="wrapper">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <!-- 头部 -->
+    <div class="navbar-header">
+        <a href="/wxduihua.html" class="top-logo">微信对话</a>
+        <a href="javascript:;" id="btn-menu">Menu</a>
+
+    </div>
+    <!-- /.navbar-header -->
+
+    <ul class="nav navbar-top-links navbar-right">
+
+        <!--<li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>微微二维码生成器
+            </a>
+        </li>
+        <li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>语音码
+            </a>
+        </li>
+        <li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>多媒体码
+            </a>
+        </li>
+        <li>
+            <a class="btn-login-register" href="" target="_bank">
+                <i class="fa fa-check fa-fw"></i>二维码生成器
+            </a>
+        </li>-->
+                                    <li><a href="/wxlogin.html"><i class="fa fa-sign-in fa-fw"></i> 登录 / 注册</a></li>    </ul>
+    <!-- /.navbar-top-links -->
+
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse collapse">
+            <ul class="nav" id="side-menu">
+                <li class="active">
+                    <a href="/"><i class="fa fa-home fa-fw"></i> 首页</a>
+                </li>
+                                <li class="active">
+                    <a href="javascript:;"><i class="fa fa-wechat fa-fw"></i> 微信 - <span style="color:red">2019 最新版</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                                                        <a href="/wxduihua.html">微信对话生成 <b style="color: #ff0000!important">可发图</b></a>
+                        </li>
+                        <li>
+                            <a href="/wxpay.html">微信转账详情生成</a>
+                        </li>
+                        <li>
+                            <a href="/wxwallet.html">微信零钱页面生成</a>
+                        </li>
+						<li>
+                            <a target="_blank" href="http://www.videaba.com/index.php?s=/Home/Article/detail/id/127464.html">制作教程</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="active">
+                    <a href="javascript:;"><i class="fa fa-shield fa-fw"></i> 支付宝 - <span style="color:red">2020 最新版</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="/alipay2020.html">支付宝转账生成<span style="color:red">2020最新</span></a>
+                        </li>
+                        <li>
+                            <a href="/alipay.html">支付宝转账生成2019</a>
+                        </li>
+                        <li>
+                            <a href="/balance.html">支付宝账户余额生成</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li>
+                    <a href="/qr.html">
+                        <i class="fa fa-qrcode fa-fw"></i> <span style="color: red;">合成二维码</span></a>
+                </li>
+                <!--<li class="active">
+                    <a href="javascript:;"><i class="fa fa-link fa-fw"></i> 实用工具<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="">二维码解码器</a>
+                        </li>
+                        <li>
+                            <a href="">图片转文字</a>
+                        </li>
+                        <li>
+                            <a href="">图片gps信息查看</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active" style="margin-top:20px;">
+                    <a  href="" target="_blank"> 免费美化二维码</a>
+                </li>-->
+
+            </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+    <!-- /头部 -->
+</nav>
+
+<!-- 主体 -->
+<div id="page-wrapper">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12">
+        <h1 class="page-header">微信</h1>
+                    <a href="/wxduihua.html">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-wechat fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">&nbsp;</div>
+                                <div>微信对话生成器</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <span class="pull-left">点击制作</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/wxpay.html">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-green panel-green2">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-exchange fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">&nbsp;</div>
+                                <div>微信转账详情生成器</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <span class="pull-left">点击制作</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/wxwallet.html">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-yellow panel-yellow2">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-money fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">&nbsp;</div>
+                                <div>微信零钱页面生成器</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <span class="pull-left">点击制作</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12">
+        <h1 class="page-header">支付宝</h1>
+        <a href="/alipay.html">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-yellow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-shield fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">&nbsp;</div>
+                                <div>支付宝转账生成器</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <span class="pull-left">点击制作</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/balance.html">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-yellow panel-yellow3">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-credit-card fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">&nbsp;</div>
+                                <div>支付宝账户余额生成器</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <span class="pull-left">点击制作</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12">
+        <h1 class="page-header">91艺术二维码 <small>让二维码艺术起来</small></h1>
+        <div class="row">
+                        <div class="col-md-2 col-xs-6">
+                <a href="http://www.91ewm.com/erweima/150.html" target="_blank">
+                <div class="thumbnail">
+                    <img src="http://image.videaba.com/Fg6EyMPoKPH5CnNSHEGNCjJJVD92">
+                    <div class="caption">
+                        <h3>粉色少女 粉色爱情 公众号图片</h3>
+                        <p><a href="http://www.91ewm.com/erweima/150.html" target="_blank" class="btn btn-primary" role="button">开始制作<e>→</e></a></p>
+                    </div>
+                </div>
+                </a>
+            </div>            <div class="col-md-2 col-xs-6">
+                <a href="http://www.91ewm.com/erweima/279.html" target="_blank">
+                <div class="thumbnail">
+                    <img src="http://image.videaba.com/FrHZ1k52XQvItYWBdYgYR8nBaKh7">
+                    <div class="caption">
+                        <h3>教师节快乐</h3>
+                        <p><a href="http://www.91ewm.com/erweima/279.html" target="_blank" class="btn btn-primary" role="button">开始制作<e>→</e></a></p>
+                    </div>
+                </div>
+                </a>
+            </div>            <div class="col-md-2 col-xs-6">
+                <a href="http://www.91ewm.com/erweima/45.html" target="_blank">
+                <div class="thumbnail">
+                    <img src="http://image.videaba.com/Fq3PiqZupq_g2S6YX3SxaZyabHkS">
+                    <div class="caption">
+                        <h3>爱情 情侣 旅行 二维码生成</h3>
+                        <p><a href="http://www.91ewm.com/erweima/45.html" target="_blank" class="btn btn-primary" role="button">开始制作<e>→</e></a></p>
+                    </div>
+                </div>
+                </a>
+            </div>            <div class="col-md-2 col-xs-6">
+                <a href="http://www.91ewm.com/erweima/162.html" target="_blank">
+                <div class="thumbnail">
+                    <img src="http://image.videaba.com/FsuFOkc4oO3fDj9AlRZJRoYZbZ-Q">
+                    <div class="caption">
+                        <h3>红色 邀请函海报 二维码模板</h3>
+                        <p><a href="http://www.91ewm.com/erweima/162.html" target="_blank" class="btn btn-primary" role="button">开始制作<e>→</e></a></p>
+                    </div>
+                </div>
+                </a>
+            </div>            <div class="col-md-2 col-xs-6">
+                <a href="http://www.91ewm.com/erweima/234.html" target="_blank">
+                <div class="thumbnail">
+                    <img src="http://image.videaba.com/FtZfEIdUD_4tu87CmVPUSdYQbNwf">
+                    <div class="caption">
+                        <h3>父亲节公众号二维码</h3>
+                        <p><a href="http://www.91ewm.com/erweima/234.html" target="_blank" class="btn btn-primary" role="button">开始制作<e>→</e></a></p>
+                    </div>
+                </div>
+                </a>
+            </div>            <div class="col-md-2 col-xs-6">
+                <a href="http://www.91ewm.com/erweima/58.html" target="_blank">
+                <div class="thumbnail">
+                    <img src="http://image.videaba.com/FpBcMLOyZwO8VwpUhqiuzg0472Mj">
+                    <div class="caption">
+                        <h3>免费餐饮美食 烘焙 甜甜圈</h3>
+                        <p><a href="http://www.91ewm.com/erweima/58.html" target="_blank" class="btn btn-primary" role="button">开始制作<e>→</e></a></p>
+                    </div>
+                </div>
+                </a>
+            </div>        </div>
+            </div>
+        </div>
+
+    <hr/>
+    <div class="alert">
+        免责声明:本站功能可以快捷方便生成各类奇葩、搞笑、创新、段子等对话仅用于娱乐信息生成，正式场合请勿使用更不得用于非法用途，否则后果自负。南昌助点科技有限公司 <a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow">赣ICP备17008532号-1 </a>(广告合作微信号:wjh925781570)
+    <!-- /.row -->
+    </div>
+</div>
+<!-- /主体 -->
+</div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?010af47f72a51e97131f1828d7caabb8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- /底部 -->
+</body>
+</html>

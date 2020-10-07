@@ -1,0 +1,5 @@
+@media (max-width:1000px) {
+    .panel-wx-tab{margin-top:678px;}
+    #page-wrapper{min-height: auto;}
+    .xs-no-margin-top{margin-top: 0;}
+}
